@@ -1,0 +1,107 @@
+//ЗАДАНИЕ 4
+let text = "my text";
+
+if (text === "some text") {
+   text = "another text";
+} else {
+    text = "some text";
+}
+
+console.log(text);
+
+
+//ЗАДАНИЕ 5
+let number = +prompt("Введите число:");
+
+if (number === 0) {
+    number = 1; 
+} else if (number < 0) {
+    number = "less then zero"; 
+} else {
+    number *= 10; 
+}
+
+console.log(number);
+
+
+//ЗАДАНИЕ 6
+const num = +prompt("Введите число:");
+
+let result;
+if (num < 5) {
+    result = '0';
+} else {
+    result = '1';
+}
+
+console.log(result);
+
+
+//ЗАДАНИЕ 7
+let num1 = +prompt("Введите первое число: ");
+let num2 = +prompt("Введите второе число: ");
+
+if (num1 > num2) {
+    console.log(Большее число: ${num1});
+} else if (num2 > num1) {
+    console.log(Большее число: ${num2});
+} else {
+    console.log("Оба числа равны.");
+}
+
+
+//ЗАДАНИЕ 8
+let num1 = +prompt("Введите первое число: ");
+let num2 = +prompt("Введите второе число: ");
+
+if (num1 % num2 === 0) {
+    console.log(` Число ${num1} кратно числу ${num2}. `);
+} else {
+    console.log(` Число ${num1} не кратно числу ${num2}. `);
+}
+
+
+//ЗАДАНИЕ 9
+let a = +prompt("Введите ваш средний балл:");
+
+if (a >= 1 && a <= 4) {
+    console.log("Двоечник, иди учись!");
+} else if (a >= 5 && a <= 8) {
+    console.log("Неплохо, но давай еще поднажмем!");
+} else if (a >= 9 && a <= 10) { // Используем else if вместо else
+    console.log("Ого, да ты настоящий отличник!");} else {
+    console.log("Некорректный ввод. Введите число от 1 до 10.");
+}
+
+
+
+//ЗАДАНИЕ 10
+let exam = +prompt("Введите ваш балл за экзамен: ");
+let project = +prompt("Введите количество выполненных проектов: " );
+
+let result;
+if (exam > 90 || project > 10) {
+    result = 100;
+} else if (exam > 75 && project >= 5) {
+    result = 90;
+} else if (exam > 50 && project >= 2) {
+    result = 75;
+} else {
+    result = 0;
+}
+
+console.log(Ваш выпускной балл: ${result});
+
+
+//ЗАДАНИЕ 11
+let rent = +prompt("На сколько дней хотите арендовать автомобиль? ");
+const day = 40;
+
+let total = rent * day;
+if (rent >= 7) {
+    total -= 50; 
+} else if (rent >= 3) {
+    total -= 20; 
+}
+
+console.log(Общая стоимость аренды: $${total});
